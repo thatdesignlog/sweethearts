@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  font-family: var(--font-ultra);
+}
+main {
+  background-image: url("/backgroundsweetheart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #FF69B4;
+  min-height: 100vh;
+  background-position: center;
+  padding: 24px;
+}
+
+.container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  font-size: 75px;
+  text-align: center;
+  font-weight: 700;
+  flex-direction: row;
+
+  
+}
+
+.title, .direction {
+  text-align: left;
+  font-family: var(--font-ultra);
+}
+
+.box__canvas {
+  background-color: black;
+  width: 100%;
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+    font-size: 30px;
+  }
+  .container div {
+    width: 100%;
+  }
+  .title, .direction {
+    text-align: center;
+  }
+}
